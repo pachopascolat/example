@@ -51,7 +51,7 @@ const setupIfNecessary = async () => {
 
   const radio = {
     url: 'https://redenfoques.com.ar:8060/lakorneta',
-    title: 'La Korneta 95.2',
+    title: 'La Korneta 92.5',
     artist: 'La Radio Comunitaria de Las Grutas',
     artwork: 'https://lakorneta.com.ar/wp-content/uploads/2021/08/cropped-logo-png.png', // Load artwork from the app bundle
     duration: 120,
@@ -141,15 +141,15 @@ const App = () => {
           <Text style={styles.secondaryActionButton}>Prev</Text>
         </TouchableWithoutFeedback> */}
         <TouchableWithoutFeedback onPress={() => togglePlayback(playbackState)}>
-       
+
 
         {playbackState !== State.Playing ? <Play/> : <Pause/>}
 
-      
+
        {/* <Text style={styles.primaryActionButton}>
             {playbackState === State.Playing ? 'Pause' : 'Play'}
           </Text>*/}
-          
+
         </TouchableWithoutFeedback>
         {/* <TouchableWithoutFeedback onPress={() => TrackPlayer.skipToNext()}>
           <Text style={styles.secondaryActionButton}>Next</Text>
